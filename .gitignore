@@ -169,3 +169,4 @@ modules.xml
 profiles_settings.xml
 daily-scheduler-locust.iml
 vcs.xml
+.idea/

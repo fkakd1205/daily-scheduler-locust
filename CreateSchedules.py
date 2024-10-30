@@ -1,7 +1,7 @@
 from locust import HttpUser, task, between
 import random
 
-class CreateSchedulers(HttpUser):
+class CreateSchedules(HttpUser):
     wait_time = between(1, 2)     # 스레드 시작 여유 시간 설정
     categories_id = []
 

@@ -1,7 +1,6 @@
 from datetime import datetime, timedelta
 
 from locust import HttpUser, task, between
-import random
 
 class SearchSchedules(HttpUser):
     wait_time = between(1, 2)  # 스레드 시작 여유 시간 설정

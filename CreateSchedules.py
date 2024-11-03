@@ -1,6 +1,9 @@
 from locust import HttpUser, task, between, SequentialTaskSet
 import random
 
+"""
+랜덤한 유저가 스케쥴을 다중 생성하는 테스트 
+"""
 class CreateSchedules(HttpUser):
     @task
     class SequenceOfTasks(SequentialTaskSet):

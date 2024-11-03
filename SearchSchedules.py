@@ -2,6 +2,9 @@ from datetime import datetime, timedelta
 
 from locust import HttpUser, task, between
 
+"""
+한 유저가 스케쥴 요약 데이터를 지속적으로 요청하는 테스트
+"""
 class SearchSchedules(HttpUser):
     wait_time = between(1, 2)  # 스레드 시작 여유 시간 설정
     today = datetime.now()

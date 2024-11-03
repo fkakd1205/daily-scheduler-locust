@@ -3,6 +3,9 @@ import random
 
 from locust import HttpUser, task, between, SequentialTaskSet
 
+"""
+랜덤한 유저가 스케쥴 요약 데이터를 지속적으로 요청하는 테스트
+"""
 class SearchSchedulesForUsers(HttpUser):
     @task
     class SequenceOfTasks(SequentialTaskSet):
